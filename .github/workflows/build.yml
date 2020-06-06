@@ -18,11 +18,11 @@ jobs:
           python-version: '3.x'
 
       - name: Install dependencies.
-        run: >-
+        run: |
           pip install pyquery
       
       - name: Install build tools and generate distribution archives.
-        run: >-
+        run: |
           pip install setuptools wheel
           python setup.py sdist bdist_wheel
 
