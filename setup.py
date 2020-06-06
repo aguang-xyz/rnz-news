@@ -4,7 +4,7 @@ with open("README.md", "r") as f:
     long_description = f.read()
 
 setuptools.setup(
-    name="rnz-news-aguang-xyz",
+    name="rnz_news",
     version="0.0.1",
     author="Guangrui Wang",
     author_email="aguang.xyz@gmail.com",
