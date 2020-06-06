@@ -125,6 +125,10 @@ class RnzNewsCategory:
 
 class RnzNews:
     def categories(self):
+        '''Retrieve all categories.
+
+        Returns: a list of RnzNewsCategory.
+        '''
         return [
             RnzNewsCategory(path, description)
             for path, description in categories

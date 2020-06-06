@@ -1,0 +1,35 @@
+name: Build/release
+
+on:
+  push:
+    tags: '*'
+
+jobs:
+  release:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out Git repository
+        uses: actions/checkout@v1
+
+      - name: Set up Python.
+        uses: actions/setup-python@v1
+        with:
+          python-version: '3.x'
+
+      - name: Install dependencies.
+        run: >-
+          pip install pyquery
+      
+      - name: Install build tools and generate distribution archives.
+        run: >-
+          pip install setuptools wheel
+          python setup.py sdist bdist_wheel
+
+      - name: Publish a Python distribution to PyPI.
+        uses: pypa/gh-action-pypi-publish@master
+        with:
+          user: __token__
+          # Config for secret: pypi_password.
+          password: ${{ secrets.pypi_password }}
+
