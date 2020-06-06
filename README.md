@@ -47,5 +47,7 @@ for articles, page in sport_category:
         print(article.address)
         print(article.title)
         print(article.summary)
+        print(article.time)
         print(article.content)
+        print(article.html)
 ```

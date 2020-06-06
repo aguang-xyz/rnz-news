@@ -20,6 +20,10 @@ jobs:
       - name: Install dependencies.
         run: |
           pip install pyquery
+
+      - name: Run unit tests.
+        run: |
+          python -m unittest
       
       - name: Install build tools and generate distribution archives.
         run: |

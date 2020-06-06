@@ -30,7 +30,9 @@ class RnzNewsTest(TestCase):
                 print('address: ', article.address)
                 print('title: ', article.title)
                 print('summary: ', article.summary)
+                print('time: ', article.time)
                 print('content: ', article.content)
+                print('html: ', article.html)
 
                 print('\n')
 

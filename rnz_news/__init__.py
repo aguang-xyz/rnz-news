@@ -26,6 +26,8 @@ class RnzNewsArticle:
         self._title = title
         self._summary = summary
         self._body = None
+        self._html = None
+        self._time = None
 
     @property
     def category(self):
@@ -52,6 +54,7 @@ class RnzNewsArticle:
 
         self._body = doc('.article__body').text()
         self._html = doc('.article__body').html()
+        self._time = doc('.article__header .updated').text()
 
     @property
     def content(self):
@@ -66,6 +69,13 @@ class RnzNewsArticle:
             self._fetch()
 
         return self._html
+
+    @property
+    def time(self):
+        if self._time is None:
+            self._fetch()
+
+        return self._time
 
 
 class RnzNewsCategory:
