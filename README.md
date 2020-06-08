@@ -2,6 +2,7 @@
 
 [![](https://img.shields.io/pypi/v/rnz-news)](https://badge.fury.io/py/rnz-news)
 ![](https://img.shields.io/pypi/l/rnz-news)
+![](https://img.shields.io/pypi/dm/rnz-news)
 
 Retrieve RNZ news.
 
