@@ -5,7 +5,7 @@ with open("README.md", "r") as f:
 
 setuptools.setup(
     name="rnz_news",
-    version="0.0.3",
+    version="0.0.4",
     author="Guangrui Wang",
     author_email="aguang.xyz@gmail.com",
     description="Retrieve RNZ news.",
