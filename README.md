@@ -4,4 +4,4 @@ Retrieve RNZ news.
 
 ## Packages.
 
-* ![Python](./python)
+* [Python](./python)
