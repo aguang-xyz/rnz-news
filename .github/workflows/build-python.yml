@@ -2,7 +2,7 @@ name: Build/release
 
 on:
   push:
-    tags: '*'
+    tags: "*"
 
 jobs:
   release:
@@ -15,16 +15,20 @@ jobs:
       - name: Set up Python.
         uses: actions/setup-python@v1
         with:
-          python-version: '3.x'
+          python-version: "3.x"
 
       - name: Install dependencies.
         run: |
           pip install pyquery
 
+      - name: Change to python folder.
+        run: |
+          cd python
+
       - name: Run unit tests.
         run: |
           python -m unittest
-      
+
       - name: Install build tools and generate distribution archives.
         run: |
           pip install setuptools wheel
@@ -36,4 +40,3 @@ jobs:
           user: __token__
           # Config for secret: pypi_password.
           password: ${{ secrets.pypi_password }}
-
