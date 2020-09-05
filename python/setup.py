@@ -2,8 +2,9 @@ import setuptools
 import subprocess
 
 # Retrive git version.
-version = subprocess.run(["git", "describe", "--tags", "--abbrev=0"],
-                         stdout=subprocess.PIPE).stdout.strip()[1:]
+version = subprocess.run(
+    ["git", "describe", "--tags", "--abbrev=0"],
+    stdout=subprocess.PIPE).stdout.strip()[1:].decode('utf-8')
 
 with open("README.md", "r") as f:
     long_description = f.read()
@@ -23,5 +24,5 @@ setuptools.setup(
         "License :: OSI Approved :: MIT License",
         "Operating System :: OS Independent",
     ],
-    python_requires='>= 3.8',
+    python_requires='>= 3.5',
 )
