@@ -1,4 +1,4 @@
-name: Build/release
+name: release/python
 
 on:
   push:
@@ -21,18 +21,16 @@ jobs:
         run: |
           pip install pyquery
 
-      - name: Change to python folder.
-        run: |
-          cd python
-
       - name: Run unit tests.
         run: |
           python -m unittest
+        working-directory: ./python
 
       - name: Install build tools and generate distribution archives.
         run: |
           pip install setuptools wheel
           python setup.py sdist bdist_wheel
+        working-directory: ./python
 
       - name: Publish a Python distribution to PyPI.
         uses: pypa/gh-action-pypi-publish@master
@@ -40,3 +38,4 @@ jobs:
           user: __token__
           # Config for secret: pypi_password.
           password: ${{ secrets.pypi_password }}
+        working-directory: ./python
