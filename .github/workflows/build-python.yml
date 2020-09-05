@@ -38,4 +38,4 @@ jobs:
           user: __token__
           # Config for secret: pypi_password.
           password: ${{ secrets.pypi_password }}
-          packages_dir: python/dist/
+        working-directory: ./python
