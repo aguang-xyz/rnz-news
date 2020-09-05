@@ -1,4 +1,4 @@
-name: release/python
+name: build/python
 
 on:
   push:
@@ -34,6 +34,7 @@ jobs:
 
       - name: Publish a Python distribution to PyPI.
         uses: pypa/gh-action-pypi-publish@master
+        if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
         with:
           user: __token__
           # Config for secret: pypi_password.
