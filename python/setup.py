@@ -1,11 +1,16 @@
 import setuptools
+import subprocess
+
+# Retrive git version.
+version = subprocess.run(["git", "describe", "--tags", "--abbrev=0"],
+                         stdout=subprocess.PIPE).stdout.strip()[1:]
 
 with open("README.md", "r") as f:
     long_description = f.read()
 
 setuptools.setup(
     name="rnz_news",
-    version="0.0.4",
+    version=version,
     author="Guangrui Wang",
     author_email="aguang.xyz@gmail.com",
     description="Retrieve RNZ news.",
