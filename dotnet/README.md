@@ -15,6 +15,7 @@ dotnet add package RnzNews
 ### 1. Retrive all categories.
 
 ```cs
+using System;
 using RnzNews;
 
 var client = new RnzNewsClient();
@@ -30,6 +31,7 @@ foreach (var category in client.Categories)
 ## 2. Get access to a category with a given path.
 
 ```cs
+using System;
 using RnzNews;
 
 var client = new RnzNewsClient();
@@ -39,6 +41,7 @@ var sportCategory = client["news/sport"];
 ## 3. Retrive articles through a category.
 
 ```cs
+using System;
 using RnzNews;
 
 var client = new RnzNewsClient();
