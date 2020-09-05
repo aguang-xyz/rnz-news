@@ -5,4 +5,4 @@ Retrieve RNZ news.
 ## Packages.
 
 * [Python](./python)
-* [.NET Core](./dotnet)
+* [C# .NET Core](./dotnet)
