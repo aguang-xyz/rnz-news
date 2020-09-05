@@ -1,5 +1,6 @@
 # rnz-news
 
+[![build/dotnet](https://github.com/aguang-xyz/rnz-news/workflows/build/dotnet/badge.svg)](https://github.com/aguang-xyz/rnz-news/actions?query=workflow%3Abuild%2Fdotnet)
 [![](https://img.shields.io/nuget/v/RnzNews)](https://www.nuget.org/packages/RnzNews/)
 ![](https://img.shields.io/pypi/l/rnz-news)
 ![](https://img.shields.io/nuget/dt/RnzNews)
