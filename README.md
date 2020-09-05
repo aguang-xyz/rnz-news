@@ -2,7 +2,7 @@
 
 Retrieve [RNZ news](https://www.rnz.co.nz/news).
 
-## Packages.
+## Libraries.
 
 * [Python](./python)
 * [C# .NET Core](./dotnet)
