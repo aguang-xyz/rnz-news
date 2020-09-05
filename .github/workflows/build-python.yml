@@ -15,7 +15,7 @@ jobs:
       - name: Set up Python.
         uses: actions/setup-python@v1
         with:
-          python-version: "3.5"
+          python-version: "3.8"
 
       - name: Install dependencies.
         run: |
@@ -38,4 +38,4 @@ jobs:
           user: __token__
           # Config for secret: pypi_password.
           password: ${{ secrets.pypi_password }}
-        working-directory: ./python
+          packages_dir: ./python
