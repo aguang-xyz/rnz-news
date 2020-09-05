@@ -1,6 +1,6 @@
-# 📰 rnz-news
+# 📰 RNZ News
 
-Retrieve RNZ news.
+Retrieve ![RNZ news](https://www.rnz.co.nz/news).
 
 ## Packages.
 
