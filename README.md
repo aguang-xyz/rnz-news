@@ -1,4 +1,4 @@
-# rnz-news
+# 📰 rnz-news
 
 Retrieve RNZ news.
 
