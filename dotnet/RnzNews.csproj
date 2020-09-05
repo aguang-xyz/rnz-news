@@ -1,0 +1,20 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>netstandard2.0</TargetFramework>
+    
+    <PackageId>RnzNews</PackageId>
+    <Description>Retrive RNZ News</Description>
+    <Authors>Guangrui Wang</Authors>
+    <PackageLicenseExpression>MIT</PackageLicenseExpression>
+    <RepositoryUrl>https://github.com/aguang-xyz/rnz-news/tree/master/dotnet</RepositoryUrl>
+
+    <EnableDefaultCompileItems>false</EnableDefaultCompileItems>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="HtmlAgilityPack" Version="1.11.24" />
+    <Compile Include="RnzNews.cs" />
+  </ItemGroup>
+
+</Project>
