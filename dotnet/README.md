@@ -1,5 +1,9 @@
 # rnz-news
 
+[![](https://img.shields.io/nuget/v/RnzNews)](https://www.nuget.org/packages/RnzNews/)
+![](https://img.shields.io/pypi/l/rnz-news)
+![](https://img.shields.io/nuget/dt/RnzNews)
+
 ## Install.
 
 ```bash
