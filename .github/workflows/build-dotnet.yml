@@ -15,6 +15,11 @@ jobs:
         with:
           dotnet-version: 3.1.302
 
+      - name: Run unit tests.
+        run: |
+          dotnet test RnzNewsTest
+        working-directory: ./dotnet
+
       - name: Publish a NuGet package.
         uses: rohith/publish-nuget@v2
         if: github.event_name == 'push' && startsWith(github.ref, 'refs/tags')
