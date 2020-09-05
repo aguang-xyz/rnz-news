@@ -1,6 +1,6 @@
 # 📰 RNZ News
 
-Retrieve ![RNZ news](https://www.rnz.co.nz/news).
+Retrieve [RNZ news](https://www.rnz.co.nz/news).
 
 ## Packages.
 
