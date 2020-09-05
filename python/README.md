@@ -1,6 +1,7 @@
 # rnz-news
 
 [![](https://img.shields.io/pypi/v/rnz-news)](https://badge.fury.io/py/rnz-news)
+[![build/python](https://github.com/aguang-xyz/rnz-news/workflows/build/python/badge.svg)](https://github.com/aguang-xyz/rnz-news/actions?query=workflow%3Abuild%2Fpython)
 ![](https://img.shields.io/pypi/l/rnz-news)
 ![](https://img.shields.io/pypi/dm/rnz-news)
 
